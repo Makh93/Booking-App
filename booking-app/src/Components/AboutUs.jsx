@@ -3,6 +3,7 @@ import MyContext from "./context";
 import Footer from "./Footer";
 import "./About.css";
 import { RiStarSFill } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 export default function AboutUs() {
   const pic = useContext(MyContext);
 
@@ -50,10 +51,11 @@ export default function AboutUs() {
           />
           <div className="overlay"></div>
           <button
+            className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-              color: "rgb(10, 77, 63)",
+
               position: "relative",
               bottom: "15rem",
             }}
@@ -61,25 +63,26 @@ export default function AboutUs() {
             delicious Food
           </button>
         </div>
-        <div  className="container">
+        <div className="container">
           <img
             src={pic.swimmingpool}
             alt="swimmingpool"
             style={{ height: "450px", width: "650px" }}
           />
-           <div className="overlay"></div>
-          <button
+          <div className="overlay"></div>
+          <NavLink to= '/room'> <button
+            className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
               fontWeight: "500",
-              color: "rgb(10, 77, 63)",
+
               position: "relative",
               bottom: "15rem",
             }}
           >
             Swimming Pool
-          </button>
+          </button></NavLink> 
         </div>
         <div className="container">
           <img
@@ -87,18 +90,19 @@ export default function AboutUs() {
             alt="schuttle"
             style={{ height: "450px", width: "650px" }}
           />
-           <div className="overlay"></div>
-          <button
+          <div className="overlay"></div>
+         <NavLink to = '/room'><button 
+            className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-              color: "rgb(10, 77, 63)",
+
               position: "relative",
               bottom: "15rem",
             }}
           >
             Airport Taxi
-          </button>
+          </button></NavLink>
         </div>
       </div>
       <div style={{ display: "flex", marginBottom: "10rem" }}>
@@ -108,18 +112,19 @@ export default function AboutUs() {
             alt="spa"
             style={{ height: "450px", width: "650px" }}
           />
-           <div className="overlay"></div>
-          <button
+          <div className="overlay"></div>
+         <NavLink to = '/path'> <button
+            className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-              color: "rgb(10, 77, 63)",
+
               position: "relative",
               bottom: "15rem",
             }}
           >
             Spa saloon
-          </button>
+          </button></NavLink>
         </div>
         <div className="container">
           <img
@@ -127,12 +132,13 @@ export default function AboutUs() {
             alt="Breakfast"
             style={{ height: "450px", width: "650px" }}
           />
-           <div className="overlay"></div>
+          <div className="overlay"></div>
           <button
+            className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-              color: "rgb(10, 77, 63)",
+
               position: "relative",
               bottom: "15rem",
             }}
@@ -146,18 +152,19 @@ export default function AboutUs() {
             alt="GameRoom"
             style={{ height: "450px", width: "650px" }}
           />
- <div className="overlay"></div>
-          <button
+          <div className="overlay"></div>
+            <NavLink to = '/room'> <button
+            className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-              color: "rgb(10, 77, 63)",
+
               position: "relative",
               bottom: "15rem",
             }}
           >
             Gaming Rooms
-          </button>
+          </button></NavLink> 
         </div>
       </div>
 

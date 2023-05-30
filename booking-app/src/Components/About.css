@@ -1,0 +1,8 @@
+.room:hover{
+
+
+    background-color: rgb(10, 77, 63);
+    color: rgb(255, 239, 239);
+    transition:  1s, 1s, transform 1s;
+    font-size: 18px;
+       }

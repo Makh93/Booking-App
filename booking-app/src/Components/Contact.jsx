@@ -78,7 +78,7 @@ export default function Contact() {
           <h2 style={{ fontWeight: "300" }}>Official Mail</h2>
           <p style={{ color: "rgb(10, 77, 63)", fontSize: "30px" }}>
             {" "}
-            info@varaus.com
+            info@sahara.com
           </p>
         </div>
 

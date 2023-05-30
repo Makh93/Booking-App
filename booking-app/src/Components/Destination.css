@@ -36,3 +36,12 @@ padding-bottom: 20px;
 }
 
 
+.room{
+
+    background-color: aliceblue;
+    padding: 15px;
+    font-weight: 500;
+    font-style: italic;
+    border: none;
+    
+       }

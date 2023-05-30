@@ -23,7 +23,14 @@ export default function Main() {
           </button>
         </NavLink>
 
-        <Booking />
+        <Booking  />
+
+   
+
+
+
+
+
         <div className="AboutUs-sec">
           <h4>About Us</h4>
           <h2>A Best Place to Enjoy</h2>

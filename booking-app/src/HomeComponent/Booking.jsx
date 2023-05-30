@@ -1,6 +1,6 @@
 
-import { FaCalendar,FaUserAlt,FaUserFriends} from "react-icons/fa";
-
+import {FaUserAlt,FaUserFriends} from "react-icons/fa";
+import '../Components/booking.css'
 import React, {useState} from 'react'
 
 export default function Booking() {
@@ -10,22 +10,26 @@ export default function Booking() {
 
  const  [date, setDate]= useState();
 
-const [availability, setAvailability]= useState(0)
+
+
+
+
+const [guests, setGuests]= useState(0)
 
 
 const handleAvailability=(e)=>{
 
-setAvailability(e.target.value)
-
-
-availability >= 4 && date ?  alert(`Apartments are available`): alert(`LakeView Room will be the best choice for you! Please proceed to our 'Room' page! `)
-
-
+setGuests(e.target.value)
 
 
 
 
 }
+
+
+
+
+
   return (
 
 
@@ -44,11 +48,11 @@ availability >= 4 && date ?  alert(`Apartments are available`): alert(`LakeView 
 
 <div  className="calendar">
 <h4 >Guests <FaUserAlt/> </h4>
-<input   style={{padding: '10px',border: 'none', fontSize: '20px', fontWeight:'400', width: '100px' }}  type='availability'/>
+<input on  style={{padding: '10px',border: 'none', fontSize: '20px', fontWeight:'400', width: '100px' }}  type='number' />
 </div>
 <div  className="calendar">
 <h4>Children <FaUserFriends/></h4>
-<input    style={{padding: '10px',border: 'none', fontSize: '20px', fontWeight:'400' , width: '100px'}} type='availability' />
+<input    style={{padding: '10px',border: 'none', fontSize: '20px', fontWeight:'400' , width: '100px'}} type='number'/>
 
 </div>
 
@@ -57,7 +61,11 @@ availability >= 4 && date ?  alert(`Apartments are available`): alert(`LakeView 
 <button   onClick= {handleAvailability}className='check'>Check Availability</button>
 
 
-    </div>
+       
+
+    
+
+   </div>
    
-  )
+  );
 }
