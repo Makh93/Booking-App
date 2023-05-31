@@ -14,7 +14,7 @@ export default function Main() {
     <div>
       <img src={pic.beach} style={{ height: "60rem" }} alt="resort" />
       <div className="resort">
-        <h1> The Sahara Hotel & Resort</h1>
+        <h1>{'  '}Sahara Hotel & Resort</h1>
         <p>Make your life Better and Bright! You must trip with Us!</p>
 
         <NavLink to="/room">
