@@ -67,13 +67,13 @@ console.log('proceed to our room Page ')
 
 
 
-{/*<button   onClick= {handleAvailability}className='check'>Check Availability</button>*/}
+<button   onClick= {handleAvailability}className='check'>Check Availability</button>
 
 
        { guests=== 0 ?(
    <div className="availability">
 
-    <p>Check Availability</p>
+    
    </div>
        ):
         
