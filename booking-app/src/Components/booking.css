@@ -1,9 +1,14 @@
-.condition{
+.availability{
 
 
-    background-color: blue;
+    position: relative;
+    font-size: 25px;
+    color: rgb(20, 49, 167);
+    width: 30rem;
+    margin-left: 5rem;
+    
+    
+    }
     
 
-    margin-top: 10rem;
-    margin-right: 20rem;
-       }
+       

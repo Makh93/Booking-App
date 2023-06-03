@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import MyContext from "./context";
 import Footer from "./Footer";
 import "./About.css";
@@ -6,6 +6,27 @@ import { RiStarSFill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 export default function AboutUs() {
   const pic = useContext(MyContext);
+
+
+  const [mouseOn, setMouseOn]= useState(false)
+
+  const handleMouseEnter=()=>{
+
+setMouseOn(true)
+
+
+
+  }
+
+
+  const handleMouseLeave=()=>{
+
+    setMouseOn(false)
+    
+    
+    
+      }
+
 
   return (
     <div>
@@ -43,128 +64,109 @@ export default function AboutUs() {
       />
 
       <div style={{ display: "flex", marginTop: "5rem" }}>
-        <div className="container">
+        <div className="container"  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
           <img
             src={pic.food}
             alt="food"
             style={{ height: "450px", width: "650px" }}
           />
-          <div className="overlay"></div>
-          <button
+        
+          {mouseOn && <button
             className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-
-              position: "relative",
-              bottom: "15rem",
             }}
           >
             delicious Food
-          </button>
+          </button>}
         </div>
-        <div className="container">
+        <div className="container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <img
             src={pic.swimmingpool}
             alt="swimmingpool"
             style={{ height: "450px", width: "650px" }}
           />
-          <div className="overlay"></div>
-          <NavLink to= '/room'> <button
+         
+          {mouseOn &&<NavLink to= '/room'> <button
             className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
               fontWeight: "500",
-
-              position: "relative",
-              bottom: "15rem",
             }}
           >
             Swimming Pool
-          </button></NavLink> 
+          </button></NavLink> }
         </div>
-        <div className="container">
+        <div className="container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <img
             src={pic.schuttle}
             alt="schuttle"
             style={{ height: "450px", width: "650px" }}
           />
-          <div className="overlay"></div>
-         <NavLink to = '/room'><button 
+        {mouseOn && <NavLink to = '/room'><button 
             className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-
-              position: "relative",
-              bottom: "15rem",
             }}
           >
             Airport Taxi
-          </button></NavLink>
+          </button></NavLink>}
         </div>
       </div>
       <div style={{ display: "flex", marginBottom: "10rem" }}>
-        <div className="container">
+        <div className="container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <img
             src={pic.spa}
             alt="spa"
             style={{ height: "450px", width: "650px" }}
           />
-          <div className="overlay"></div>
-         <NavLink to = '/path'> <button
+        
+         {mouseOn && <NavLink to = '/room'> <button
             className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-
-              position: "relative",
-              bottom: "15rem",
             }}
           >
             Spa saloon
-          </button></NavLink>
+          </button></NavLink>}
         </div>
-        <div className="container">
+        <div className="container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <img
             src={pic.Breakfast}
             alt="Breakfast"
             style={{ height: "450px", width: "650px" }}
           />
-          <div className="overlay"></div>
-          <button
+         
+          {mouseOn && <button
             className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-
-              position: "relative",
-              bottom: "15rem",
             }}
           >
             Breakfast
-          </button>
+          </button>}
         </div>
-        <div className="container">
+        <div className="container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <img
             src={pic.GameRoom}
             alt="GameRoom"
             style={{ height: "450px", width: "650px" }}
           />
-          <div className="overlay"></div>
+      {mouseOn && 
             <NavLink to = '/room'> <button
             className="room"
             style={{
               padding: "15px",
               fontsize: "18px",
-
-              position: "relative",
-              bottom: "15rem",
             }}
           >
             Gaming Rooms
-          </button></NavLink> 
+          </button></NavLink> }
         </div>
       </div>
 

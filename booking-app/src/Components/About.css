@@ -6,3 +6,33 @@
     transition:  1s, 1s, transform 1s;
     font-size: 18px;
        }
+
+
+
+  
+       .room{
+
+        background-color: aliceblue;
+        padding: 15px;
+        font-weight: 500;
+        font-style: italic;
+        border: none;
+  position: relative;
+  bottom: 15rem;
+  
+    
+      
+        
+        
+           }
+
+           .container{ transition:  1s, 1s, transform 1s;
+
+
+
+           }
+
+
+
+
+
