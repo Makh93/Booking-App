@@ -141,7 +141,7 @@ export default function Contact() {
             }}
             type="text"
             placeholder="Last Name"
-            required
+           
             minLength={3}
             maxLength={20}
           />
