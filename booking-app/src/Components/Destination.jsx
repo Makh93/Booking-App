@@ -4,13 +4,9 @@ import React, { useEffect, useRef, useContext } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import MyContext from '../Components/context';
+import MyContext from "../Components/context";
 export default function Destination() {
-
-  const pic= useContext(MyContext)
-
-
-
+  const pic = useContext(MyContext);
 
   const sliderRef = useRef(null);
 
@@ -36,7 +32,7 @@ export default function Destination() {
 
   return (
     <div>
-    <img  style= {{height:'700px'}}src={pic.resort}alt="view" />
+      <img style={{ height: "700px" }} src={pic.resort} alt="view" />
 
       <div>
         <h2 style={{ color: "rgb(10, 77, 63)", fontSize: "35px" }}>
@@ -53,7 +49,6 @@ export default function Destination() {
 
       <Slider ref={sliderRef} {...settings} className="destinations">
         <div className="drop">
-          
           <img style={{ marginLeft: "20px" }} src={pic.arab} alt="" />
           <div className="info">
             <h1>United Arab</h1>
@@ -61,7 +56,7 @@ export default function Destination() {
           </div>
         </div>
         <div className="drop">
-          <img style={{ marginLeft: "20px", }} src={pic.greece} alt="" />
+          <img style={{ marginLeft: "20px" }} src={pic.greece} alt="" />
           <div className="info">
             <h1>Greece</h1>
             <p> 445€ per day</p>
@@ -75,7 +70,6 @@ export default function Destination() {
           </div>
         </div>
         <div className="drop">
-          
           <img style={{ marginLeft: "20px" }} src={pic.egypt} alt="" />
           <div className="info">
             <h1>Egypt</h1>
@@ -97,7 +91,6 @@ export default function Destination() {
           </div>
         </div>
         <div className="drop">
-          
           <img style={{ marginLeft: "20px" }} src={pic.maldives} alt="" />
           <div className="info">
             <h1>Maldives</h1>

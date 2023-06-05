@@ -72,7 +72,7 @@ setMouseOn(true)
           />
         
           {mouseOn && <button
-            className="room"
+            className="room1"
             style={{
               padding: "15px",
               fontsize: "18px",
@@ -89,7 +89,7 @@ setMouseOn(true)
           />
          
           {mouseOn &&<NavLink to= '/room'> <button
-            className="room"
+            className="room1"
             style={{
               padding: "15px",
               fontsize: "18px",
@@ -106,7 +106,7 @@ setMouseOn(true)
             style={{ height: "450px", width: "650px" }}
           />
         {mouseOn && <NavLink to = '/room'><button 
-            className="room"
+            className="room1"
             style={{
               padding: "15px",
               fontsize: "18px",
@@ -125,7 +125,7 @@ setMouseOn(true)
           />
         
          {mouseOn && <NavLink to = '/room'> <button
-            className="room"
+            className="room1"
             style={{
               padding: "15px",
               fontsize: "18px",
@@ -142,7 +142,7 @@ setMouseOn(true)
           />
          
           {mouseOn && <button
-            className="room"
+            className="room1"
             style={{
               padding: "15px",
               fontsize: "18px",
@@ -159,7 +159,7 @@ setMouseOn(true)
           />
       {mouseOn && 
             <NavLink to = '/room'> <button
-            className="room"
+            className="room1"
             style={{
               padding: "15px",
               fontsize: "18px",
