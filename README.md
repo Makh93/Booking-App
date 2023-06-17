@@ -55,6 +55,6 @@ Unsplash for providing high-quality recipe images.
 
 ## Contributing
 
-For any inquiries or feedback, please contact us at abeeraareej@gmail.com. We appreciate your input and would be happy to assist you.
+For any inquiries or feedback, please contact us at [abeeraareej@gmail.com]. We appreciate your input and would be happy to assist you.
 
 
