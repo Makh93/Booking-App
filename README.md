@@ -30,7 +30,7 @@ git clone <repository-url>
 cd react-booking-app
 npm install
 
-The app will be accessible at [http://localhost:3002](http://localhost:3002).
+
 
 ## Folder Structure
 
